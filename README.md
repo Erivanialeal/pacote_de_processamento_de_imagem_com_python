@@ -18,27 +18,29 @@ Organiza uma lista de imagens em uma grade (ex: 2x2), formando uma nova imagem c
 ---
 
 ## 📂 Estrutura do projeto
-
 pacote_de_processamento_de_imagem_com_python/
-├── ambiente_processador_imagem/              # Ambiente virtual (não é versionado no Git)
-│
-├── imagens/                                   # Imagens usadas como entrada nos testes
+├── ambiente_processador_imagem/
+├── imagens/
 │   ├── imagem1.jpg
 │   ├── imagem2.jpg
 │   ├── imagem3.jpg
 │   └── imagem4.jpg
-│
-├── processador_imagem/                        # Pacote principal do projeto
+├── processador_imagem/
 │   ├── __init__.py
 │   ├── processo/
 │   │   ├── __init__.py
-│   │   ├── combinação.py                      # Funções de junção (lado a lado, em grade, etc.)
-│   │   └── transformação.py                   # (em breve) funções de transformação de imagem
+│   │   ├── combinação.py
+│   │   └── transformação.py
 │   └── utils/
-│       ├── io.py                              # (em breve) carregamento e salvamento
-│       └── plot.py                            # (em breve) visualização de imagens
-│
-├── testes/                                    # Resultados gerados pelos testes (imagens combinadas)
+│       ├── io.py
+│       └── plot.py
+├── testes/
 │   ├── grade.png
-│   ├── sai
-
+│   ├── saida_juntar_lado_a_lado.png
+│   └── saida_visualização.png
+├── teste_juntar_lado_a_lado.py
+├── teste_juntar_em_grade.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── setup.py
