@@ -18,29 +18,31 @@ Organiza uma lista de imagens em uma grade (ex: 2x2), formando uma nova imagem c
 ---
 
 ## 📂 Estrutura do projeto
-pacote_de_processamento_de_imagem_com_python/
-├── ambiente_processador_imagem/
-├── imagens/
-│   ├── imagem1.jpg
-│   ├── imagem2.jpg
-│   ├── imagem3.jpg
-│   └── imagem4.jpg
-├── processador_imagem/
-│   ├── __init__.py
-│   ├── processo/
-│   │   ├── __init__.py
-│   │   ├── combinação.py
-│   │   └── transformação.py
-│   └── utils/
-│       ├── io.py
-│       └── plot.py
-├── testes/
-│   ├── grade.png
-│   ├── saida_juntar_lado_a_lado.png
-│   └── saida_visualização.png
-├── teste_juntar_lado_a_lado.py
-├── teste_juntar_em_grade.py
-├── .gitignore
-├── README.md
-├── requirements.txt
-└── setup.py
+| Arquivo/Pasta                         | Tipo              | Descrição                                      |
+|--------------------------------------|-------------------|------------------------------------------------|
+| ambiente_processador_imagem/         | Pasta             | Ambiente virtual local (não versionado)        |
+| imagens/                              | Pasta             | Imagens de entrada para os testes              |
+| ├── imagem1.jpg                      | Arquivo de imagem | Imagem de exemplo                              |
+| ├── imagem2.jpg                      | Arquivo de imagem | Imagem de exemplo                              |
+| ├── imagem3.jpg                      | Arquivo de imagem | Imagem de exemplo                              |
+| └── imagem4.jpg                      | Arquivo de imagem | Imagem de exemplo                              |
+| processador_imagem/                  | Pacote Python     | Pacote principal                               |
+| ├── __init__.py                      | Arquivo Python    | Inicializa o pacote                            |
+| ├── processo/                        | Subpacote         | Funções de processamento de imagem             |
+| │   ├── __init__.py                  | Arquivo Python    | Inicializa o subpacote                         |
+| │   ├── combinação.py                | Arquivo Python    | Funções de combinação de imagens               |
+| │   └── transformação.py             | Arquivo Python    | Transformações (em breve)                      |
+| └── utils/                           | Subpacote         | Utilitários (em breve)                         |
+|     ├── io.py                        | Arquivo Python    | Entrada e saída de imagens                     |
+|     └── plot.py                      | Arquivo Python    | Visualização de imagens                        |
+| testes/                               | Pasta             | Saída dos testes realizados                    |
+| ├── grade.png                        | Imagem gerada     | Resultado da função de grade                   |
+| ├── saida_juntar_lado_a_lado.png    | Imagem gerada     | Resultado da função de junção lado a lado      |
+| └── saida_visualização.png          | Imagem gerada     | Resultado de visualização                      |
+| teste_juntar_lado_a_lado.py          | Arquivo Python    | Script de teste da função lado a lado          |
+| teste_juntar_em_grade.py             | Arquivo Python    | Script de teste da função em grade             |
+| .gitignore                            | Arquivo texto     | Arquivos/pastas ignoradas pelo Git             |
+| README.md                             | Markdown          | Documentação do projeto                        |
+| requirements.txt                      | Arquivo texto     | Lista de bibliotecas necessárias               |
+| setup.py                              | Arquivo Python    | Script de configuração do pacote               |
+
