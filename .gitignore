@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+testes/
+imagens/
+*.log
+*.tmp
+ambiente_processador_imagem/
