@@ -15,6 +15,13 @@ Une duas imagens horizontalmente, mantendo as alturas alinhadas.
 ### 2. `juntar_em_grade(lista_de_imagens, linhas, colunas)`
 Organiza uma lista de imagens em uma grade (ex: 2x2), formando uma nova imagem composta.
 
+### 3. `sobrepor_imagens(imagem1, imagem2, alpha=0.5)`
+Combina duas imagens aplicando transparência na imagem de cima.A imagem1 fica sobre a imagem2. Quanto menor o alpha, mais transparente ela fica.
+
+### 4. `juntar_verticalmente(lista_imagens):`
+Junta uma imagem embaixo da outra
+
+
 ---
 
 ## 📂 Estrutura do projeto
