@@ -1,5 +1,5 @@
 from PIL import Image
-from processador_imagem.processo.combinação import juntar_verticalmente
+from processador_imagem.processo.combinacao import juntar_verticalmente
 
 lista_imagem = [
     Image.open('imagens/imagem3.jpg'),

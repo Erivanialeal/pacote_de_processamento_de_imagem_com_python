@@ -72,17 +72,19 @@ def juntar_verticalmente(lista_imagens):
     #retornar imagem.
     return nova_imagem
 
-def adicionar_borda(lista_imagem, tamanho=10, cor=(0, 0, 0)):
+def adicionar_borda(lista_imagems, tamanho=10, cor=(0, 0, 0)):
+    imagens_com_bordas = []
     # Para cada imagem na lista:
     # Garantir que a imagem esteja no modo RGBA
-    lista_imagem = [imagem.convert('RGBA') for imagem in lista_imagem]
     # Definir o tamanho da borda.
-    for imagem in lista_imagem:
+    for imagem in lista_imagems:
         imagem = imagem.convert('RGBA')
-        largura_total = lista_imagem.width + tamanho * 2
-        altura_total =  lista_imagem.height + tamanho * 2
-    # Calcular as novas dimensões (largura + borda * 2, altura + borda * 2)
+        largura_total = imagem.width + tamanho * 2
+        altura_total =  imagem.height + tamanho * 2
     # Criar uma nova imagem com a cor da borda e com as novas dimensões
+        nova_imagem = Image.new('RGBA', (largura_total, altura_total), cor)
     # Colar a imagem original no centro da nova imagem
-    # (Opcional) Aplicar efeito de transição suave entre imagem e borda
+        nova_imagem.paste(imagem,(tamanho, tamanho))
+        imagens_com_bordas.append(nova_imagem)
     # Retornar a lista de imagens com bordas
+    return imagens_com_bordas

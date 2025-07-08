@@ -1,5 +1,5 @@
 from PIL import Image
-from processador_imagem.processo.combinação import juntar_em_grade
+from processador_imagem.processo.combinacao import juntar_em_grade
 
 # Chamar a lista de imagens
 lista_de_imagens = [

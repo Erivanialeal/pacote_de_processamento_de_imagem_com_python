@@ -1,5 +1,5 @@
 from PIL import Image
-from processador_imagem.processo.combinação import sobrepor_imagens
+from processador_imagem.processo.combinacao import sobrepor_imagens
 
 #abrir as imagens de entrada.
 imagem1 = Image.open('imagens/imagem1.jpg')

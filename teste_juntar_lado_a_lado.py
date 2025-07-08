@@ -1,5 +1,5 @@
 from PIL import Image
-from processador_imagem.processo.combinação import juntar_lado_a_lado
+from processador_imagem.processo.combinacao import juntar_lado_a_lado
 
 # Carregar as imagens
 imagem1 = Image.open("imagens/imagem1.jpg")
